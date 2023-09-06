@@ -104,15 +104,21 @@ section{
 /*footer*/
 footer{
     margin-top: 200px;
-    padding: 40px;
+    padding: 10px;
     background-color: gold;
     color:#0b0b0b;
     font-size: medium;
 }
 
+.footer-icono{
+    height: 40px;
+    width: 70px;
+}
+
 .footer-texto{
-    padding: 0.5rem;
-    line-height: 50%;
+    font-size: 1rem;
+    padding: 10px;
+    line-height: 10%;
 }
 
 .contacto button{
@@ -120,4 +126,19 @@ footer{
     font-weight: bold;
     background-color: transparent;
     border: 0cm;
+    padding: 10px;
+}
+
+.iconos-redes-sociales a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+    color:#0b0b0b;
 }
