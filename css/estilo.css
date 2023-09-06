@@ -109,3 +109,15 @@ footer{
     color:#0b0b0b;
     font-size: medium;
 }
+
+.footer-texto{
+    padding: 0.5rem;
+    line-height: 50%;
+}
+
+.contacto button{
+    color:#0b0b0b;
+    font-weight: bold;
+    background-color: transparent;
+    border: 0cm;
+}
