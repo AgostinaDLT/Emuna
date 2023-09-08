@@ -110,7 +110,7 @@ section{
 
 /*footer*/
 footer{
-    margin-top: 200px;
+    margin-top: 250px;
     padding: 10px;
     background-color: gold;
     color:#0b0b0b;
@@ -163,4 +163,8 @@ footer{
 /*Catalogo*/
 .en-stock{
     display: inline-block;
+}
+
+.card{
+    margin-bottom: 10px;
 }
