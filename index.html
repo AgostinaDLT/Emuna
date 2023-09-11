@@ -47,7 +47,7 @@
                       </li>
                     </ul>
                     <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
                       <button class="btn btn-outline-dark" type="submit">Buscar</button>
                     </form>
                   </div>
@@ -64,14 +64,14 @@
 
 
             <!--carrusel-->
-            <section class="novedades  d-flex">
+            <section class="novedades d-flex" data-bs-ride="carousel">
               <h2 class="seccion-titulo text-center">¡Novedades!</h2>
-              <div id="carousel-novedades" class="carousel slide col-md-7 mx-auto">
+              <div id="carousel-novedades" class="carousel slide col-md-8 mx-auto" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
+                  <div class="carousel-item active" data-bs-interval="3000">
                     <img src="images/cartel_agendas2024.jpg" class="d-block w-100" alt="agendas-2024">
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item" data-bs-interval="3000">
                     <img src="images/juegos.png" class="d-block w-100" alt="juego.memoria">
                   </div>
                   <div class="carousel-item">
@@ -91,15 +91,25 @@
 
 
             <!--Sobre nosotras-->
-              <section id="sobre-nosotras" class="sobre-nosotras" style="text-align: center;">
-              <div class="contenedor">
+              <section id="sobre-nosotras" class="sobre-nosotras d-flex" style="text-align: center;">
+              <div class="contenedor col-md-8 mx-auto">
                 <h2 class="seccion-titulo text-center">¿Quiénes somos?</h2>
-                <p class="seccion-texto">Somos Ana Paula y Agostina, hermanas y compañeras de locuras!
+                <p class="seccion-texto text-center">Somos Ana Paula y Agostina, hermanas y compañeras de locuras!
                     Comenzamos con este emprendimiento a fines del 2022 cuando a Ana Paula se le ocurrió hacer un curso de encuadernación y se emocionó de tal forma que terminó arrastrando a su hermana en esta hermosa aventura.
                 </p>
                 <img src="images/nosotras.jpg" class="imagen-nosotras img-fluid" alt="imagen de nosotras">
               </div>
               </section>
+          
+          <!--Sección cómo comprar-->
+          <section class="como-comprar-index d-flex" style="text-align: center;">
+          <div class="contenedor-comprar col-md-12 mx-auto">
+            <h2 class="seccion-titulo text-center">¿Querés comprar y no sabés cómo?</h2>
+            <img class="imagen-flork img-fluid" src="images/flork-incognita.png" alt="flork-pregunta">
+            <p class="seccion-texto-comprar text-center">Acá te contamos todas las cosas que nos podés especificar y personalizar para que recibas ¡lo que realmente querés!</p>
+            <a href="comocomprar.html" class="como-comprar"><i class="bi bi-heart-arrow"></i>Click aquí</a>
+          </div>
+          </section>
         </header> 
         <footer class="seccion-oscura d-flex flex-column" id="pie-pagina" lang="es">
           <div class="container-fluid">
