@@ -13,6 +13,12 @@
         <!--bootstrap-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
         <link rel="stylesheet" href="css/estilo.css">
+        <!--Bootstrap icon-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <!--Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -49,18 +55,169 @@
             </nav> 
 
             <!--Seccion contacto-->
-            <section class="como-comprar">
+            <section class="como-comprar d-flex flex-column">
               <div class="seccion-titulo text-center">
-                <h2>¿Cómo comprar?</h2>
+                <h1>¿Cómo comprar?</h1>
+                <p class="seccion-texto-comprar">Para encargar tu pedido nos podés contactar por:</p>
               </div>
-              <div class="contacto-comprar">
-                <p class="seccion-texto">Para encargar tu pedido nos podés contactar por:</p>
-                <a href="https://wa.me/+5492495331917" class="btn btn-primary text-center">WhatsApp</a>
+              <div class="container-fluid btn-como-comprar">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <a href="https://wa.me/+5492494331917" class="btn btn-success btn-wsp"><i class="bi bi-whatsapp"> WhatsApp</i></a>
+                  </div>
+                  <div class="col-sm-4">
+                    <a href="https://instagram.com/emuna.creaciones" class="btn border btn-light btn-wsp"><i class="bi bi-instagram"> Instagram</i></a>
+                  </div>
+                  <div class="col-sm-4">
+                    <a href="https://www.facebook.com/profile.php?id=100067543217379&mibextid=ZbWKwL" class="btn btn-primary btn-wsp"><i class="bi bi-facebook"> Facebook</i></a>
+                  </div>
+                </div>
+                
               </div>
             </section>
 
+            <!--Seccion personalizado-->
+            <section class="personalizado d-flex flex-column">
+              <div class="titulo-personalizar">
+              <h2 class="seccion-titulo text-center">¿Puedo personalizar mi agenda o cuaderno?</h2>
+              <p class="seccion-texto-comprar">¡Si! Acá te explicamos que opciones tenés:</p>
+              </div>
+              <div class="acordeon-personalizar d-flex flex-column">
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                        Tamaño
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                      <div class="accordion-body medidas-acordeon">
+                        <strong>Tenemos 2 medidas: </strong>Podés optar por tamaño A5 (210x148mm) o tamaño A4(295x210mm). Recordá que el tamaño A4 saldrá el doble que el A5.
+                        <img class="imagen-medidas" src="images/tamaño-agenda-tipos.jpg" alt="medidas-de-agendas">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        Tapas
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                        <strong>Podés personalizar tus tapas:</strong><ul>
+                          <li>Eligiendo de <a href="#" >nuestras opciones</a> y agregarle algún texto, elemento o logo. Recargo $150.</a> </li>
+                          <li>O mandarnos la imagen que vos quieras (esta tiene que ser de buena calidad y en lo posible en vertical). Recargo $300</li>
+                        </ul> 
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        Interior
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                        <strong>Te dejamos una lista de ejemplos para que te puedas guiar. SIEMPRE PODÉS ENVIARNOS UN BOCETO SI NO ENCONTRÁS LO QUE QUERÉS.</strong>
+                        <p>El recargo por la personalizacion siempre va a ser en relación a lo que pidas. La base es de $300.</p>
+                        <dl class="row">
+                          <dt class="col-sm-3">En general</dt>
+                          <dd class="col-sm-9">
+                            <li>Podés agregarle hojas de notas.</li>
+                            <li>Agregarle agenda telefónica.</li>
+                            <li>O agregar cualquier otro dato que hayas visto que el cuaderno que elegiste no traiga.</li>
+                          </dd>
+                          <dt class="col-sm-3">Rayadas y Lisas</dt>
+                          <dd class="col-sm-9">
+                            <li>Podés agregarle una marca de agua a las hojas.</li>
+                            <li>Disminuir o aumentar la cantidad de hojas (estas traen 80 hojas).</li>
+                          </dd>
+                        
+                          <dt class="col-sm-3">Universitarias</dt>
+                          <dd class="col-sm-9">Estas ya traen:
+                              <li>Calendario académico</li>
+                              <li>Plan de estudio</li>
+                              <li>Organizador de materias</li>
+                              <li>Horarios de cursadas</li>
+                              <li>Organizador de trabajos prácticos</li>
+                              <li>Horarios para prácticas</li>
+                              <li>Planner mensual en cada mes</li>
+                            <p>Si te falta algo nos mandás tu boceto y lo armamos!</p>
+                          </dd>
+                        
+                          <dt class="col-sm-3">Docente</dt>
+                          <dd class="col-sm-9">Tenemos las opciones de agregarle: 
+                            <li>Organizador anual/cumpleaños</li>
+                            <li>Horarios</li>
+                            <li>Fichas de capacitacion docente</li>
+                            <li>Anotador de toma de posesión de horas</li>
+                            <li>Anotador de inscripción al listado docente</li>
+                            <li>Organizador de trabajos grupales</li>
+                            <li>Organizador de salidas/viajes</li>
+                            <li>Calificaciones</li>
+                            <li>Agenda de reuniones</li>
+                            <li>Hojas de anotación de reuniones</li>
+                            <li>Datos de alumnos</li>
+                            <li>Organizador institucional</li>
+                            <li>Registro de alumnos</li>   
+                            Y también podés elegir agregarle agenda semanal, hojas rayadas, lisas o agenda semanal perpetua.                   
+                          </dd>
+                        
+                          <dt class="col-sm-3">Emprendedora y de Turnos</dt>
+                          <dd class="col-sm-9"><p>
+                            <li>Agregale tu marca</li>
+                            <li>Modificá los cuadros</li>
+                            <li>O envianos tu boceto si necesitas algo más especifico.</li></p>
+                          </dd>
+                        
+                          <dt class="col-sm-3">IMPORTANTE: </dt>
+                          <dd class="col-sm-9">A las PEDIÁTRICAS NO se les puede MODIFICAR EL INTERIOR!                            
+                          </dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
         </header>
-        
+        <footer class="seccion-oscura d-flex flex-column" id="pie-pagina" lang="es">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-3">
+                <h6 class="footer-titulo">Medios de pago</h6>
+                <img class="footer-icono" src="images/mercadopago.png" alt="mercadopago">
+                <img class="footer-icono" src="images/cuentadni.jpg" alt="cuentadni">
+              </div>
+              <div class="col-sm-3">
+                <h6 class="footer-titulo">Medios de Envio</h6>
+                <img class="footer-icono border" src="images/correo_argentino.png" alt="correo_argentino">
+                <img class="footer-icono" src="images/andreani.png" alt="correo_andreani">
+                <img class="footer-icono" src="images/oca.jpg" alt="correo_oca">
+              </div>
+              <div class="col-sm-3">
+                <h6 class="footer-titulo">Nuestras redes sociales</h6>
+                <div class="iconos-redes-sociales d-flex flex-wrap align-items-center">
+                  <a href="https://instagram.com/emuna.creaciones" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                  <a href="https://www.facebook.com/profile.php?id=100067543217379&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="contacto col-sm-3">
+                <h6 class="footer-titulo">Contacto</h6>
+                <a href="mailto:delatorreagostina@gmail.com"><button type="button">Mail de contacto</button></a>
+                <p class="footer-texto">Tel: 2494331917 o 2494327809</p>
+                <p class="footer-texto"> Tandil, Buenos Aires.</p>
+              </div>
+            </div>
+          </div>  
+          <div class="derechos-de-autor">Creado por Agostina de la Torre (2023) &#169</div>
+        </footer>
         
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
