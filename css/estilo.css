@@ -1,5 +1,4 @@
 
-
 html {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     font-size: 16px;
@@ -7,9 +6,15 @@ html {
     line-height: 1.5;
     -webkit-text-size-adjust: 100%;
     background: #ffffff;
-    color: #0b0b0b
+    color: #0b0b0b;
+    height: 100%;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    min-width: 100vh;
+} 
 
 
 /*Barra de navegacion*/
@@ -62,7 +67,7 @@ section{
     padding: 0px 100px 0px 100px;
 }
 .carousel-novedades{
-    width: 500px;
+    width: 600px;
 }
 
 .carousel-item{
@@ -75,7 +80,7 @@ section{
     padding: 10px;
     background-color: #ffffff;
     color: #0b0b0b;
-    margin-bottom: 200px;
+    margin-bottom: 300px;
 }
 
 .seccion-titulo{
@@ -137,6 +142,7 @@ footer{
     background-color: gold;
     color:#0b0b0b;
     font-size: medium;
+    margin-top: auto;
 }
 
 .footer-icono{
@@ -182,7 +188,7 @@ footer{
 }
 
 
-/*Catalogo*/
+/*Catalogo.html*/
 .en-stock{
     display: inline-block;
 }
@@ -218,7 +224,7 @@ footer{
     margin-bottom: 50px;
 }
 
-/*quienes somos html*/
+/*quienessomos.html*/
 .bi-pin-map{
     color: rgb(206, 16, 16);
     font-size: 30px;
