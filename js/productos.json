@@ -1,0 +1,69 @@
+[
+    {
+        "id": 1,
+        "nombre": "Agenda Semanal Simple",
+        "precio": 3800,
+        "img": "images/agendasemanal.jpg" 
+    },
+    {
+        "id": 2,
+        "nombre": "Agenda Semanal con horarios",
+        "precio": 4000,
+        "img": "images/agendasemanal.jpg" 
+    },
+    {
+        "id": 3,
+        "nombre": "Agenda de Turnos",
+        "precio": 3800,
+        "img": "images/agendasemanal.jpg" 
+    },
+    {
+        "id": 4,
+        "nombre": "Agenda Emprendedora",
+        "precio": 3800,
+        "img": "images/agendasemanal.jpg" 
+    },
+    { 
+        "id": 5,
+        "nombre": "Agenda Diaria",
+        "precio": 2500,
+        "img": "images/agenda_diaria.jpg" 
+    },
+    {
+        "id": 6,
+        "nombre": "Cuaderno pediátrico",
+        "precio": 3800,
+        "img": "images/agendasemanal.jpg" 
+    },
+    {
+        "id": 7,
+        "nombre": "Agenda Universitaria",
+        "precio": 3800,
+        "img": "images/agendasemanal.jpg" 
+    },
+    {
+        "id": 8,
+        "nombre": "Agenda Docente",
+        "precio": 3800,
+        "img": "images/agendasemanal.jpg" 
+    },
+    {
+        "id": 9,
+        "nombre": "Agenda Docente Inicial",
+        "precio": 3800,
+        "img": "images/agendasemanal.jpg" 
+    },
+    { 
+        "id": 10,
+        "nombre": "Recetario",
+        "precio": 2500,
+        "img": "images/agendasemanal.jpg"
+    },
+    {
+        "id": 11,
+        "nombre": "Cuaderno rayado",
+        "precio": 2500,
+        "img": "images/rayadayanotador.jpg" 
+    }
+
+]
