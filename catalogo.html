@@ -42,10 +42,11 @@
                         <a class="nav-link" href="quienessomos.html">¿Quienes somos?</a>
                       </li>
                       <li class="nav-item">
-                        <div class="btn-bag position-absolute top-0 end-0">
-                          <div class="btn navbar-icono">
-                            <i class="bi bi-cart-fill "></i>
+                        <div class="ver-carrito btn-bag position-absolute top-0 end-0">
+                          <div id="verCarrito" class="btn navbar-icono">
+                           <h2>🛒<span id="cantidadCarrito" class="cantidad-carrito"></span></h2> 
                           </div>
+                        </div>
                       </li>
                     </ul>
                   </div>
@@ -54,8 +55,13 @@
 
 
             <!--Productos-->
-            <h2 class="titulo text-center">Productos</h2>
-            <div id="shopContent" class="shopContent"></div>
+            <h2 class="titulo text-center">PRODUCTOS</h2>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-12">
+                <div id="shopContent" class="shop-content"></div>
+              </div>
+            </div>
 
             <!--modal-->
             <div id="modal-container" class="modal-container"></div>

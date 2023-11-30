@@ -1,56 +1,86 @@
 const shopContent = document.getElementById("shopContent");
 const verCarrito = document.getElementById("verCarrito");
 const modalContainer = document.getElementById("modal-container");
+const  cantidadCarrito = document.getElementById("cantidadCarrito");
 
 const productos=[
     {
         id: 1,
         nombre: "Agenda Semanal Simple",
         precio: 3800,
-        img: "images/agendasemanal.jpg" 
+        img: "images/agendasemanal.jpg",
+        cantidad: 1 
     },
     {
         id: 2,
         nombre: "Agenda Semanal con horarios",
         precio: 4000,
-        img: "images/agendasemanal.jpg" 
+        img: "images/agenda_semanal_horario.jpeg",
+        cantidad: 1
     },
     {
         id: 3,
         nombre: "Agenda de Turnos",
-        precio: 3800,
-        img: "images/agendasemanal.jpg" 
+        precio: 4000,
+        img: "images/agenda_turnos.jpeg",
+        cantidad:1 
     },
     {
         id: 4,
         nombre: "Agenda Emprendedora",
         precio: 3800,
-        img: "images/agendasemanal.jpg" 
+        img: "images/emprendedora1.jpeg",
+        cantidad: 1
     },
     { 
         id: 5,
         nombre: "Agenda Diaria",
-        precio: 2500,
-        img: "images/agenda_diaria.jpg" 
+        precio: 6000,
+        img: "images/agenda_diaria.jpg",
+        cantidad: 1
     },
     {
         id: 6,
         nombre: "Cuaderno pediátrico",
-        precio: 3800,
-        img: "images/agendasemanal.jpg" 
+        precio: 3500,
+        img: "images/cuadernopediatrico.jpeg",
+        cantidad: 1 
     },
     {
         id: 7,
         nombre: "Agenda Universitaria",
-        precio: 3800,
-        img: "images/agendasemanal.jpg" 
+        precio: 4000,
+        img: "images/agendasemanal.jpg",
+        cantidad: 1
     },
     {
         id: 8,
         nombre: "Agenda Docente",
-        precio: 3800,
-        img: "images/agendasemanal.jpg" 
+        precio: 4000,
+        img: "images/agendasemanal.jpg",
+        cantidad: 1 
     },
+    {
+        id: 9,
+        nombre: "Planners Imantados",
+        precio: 2500,
+        img: "images/plannerhorarios_marcador.jpg",
+        cantidad: 1 
+    },
+    {
+        id: 10,
+        nombre: "Recetarios",
+        precio: 3500,
+        img: "images/recetario.jpeg",
+        cantidad: 1 
+    },
+    {
+        id: 11,
+        nombre: "Juego de la memoria",
+        precio: 2500,
+        img: "images/juego_memoria2.jpg",
+        cantidad: 1 
+    }
    
 ];
 let carrito = [];
@@ -90,8 +120,8 @@ productos.forEach((product)=>{
     content.className = "card"
     content.innerHTML = `
     <img src="${product.img}">
-    <h3>${product.nombre}</h3>
-    <p class="seccion-texto">${product.precio} $</p>
+    <h3 class="seccion-texto-card">${product.nombre}</h3>
+    <p class="price">${product.precio} $</p>
     `;
     shopContent.append(content);
 
@@ -102,13 +132,25 @@ productos.forEach((product)=>{
     content.append(comprar);
 
     comprar.addEventListener("click", ()=>{
+        const repeat = carrito.some((repeatProduct) => repeatProduct.id === product.id);
+        
+        if(repeat){
+            carrito.map((prod) =>{
+                if(prod.id === product.id){
+                    prod.cantidad++;
+                }
+            });
+        }else{
+
         carrito.push({
             id: product.id,
             img: product.img,
             nombre: product.nombre,
-            precio: product.precio}
-        );
+            precio: product.precio,
+            cantidad: product.cantidad,
+        })};
         console.log(carrito);
+        carritoCounter();
     })
 })
 
